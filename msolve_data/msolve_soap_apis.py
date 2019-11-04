@@ -1,0 +1,393 @@
+import requests
+import ast
+import json
+import re
+from collections import OrderedDict as odict
+from suds.client import Client
+import ssl
+
+proxy_setting = { 'http' : 'http://srivpra-cont:123mahindr@@10.2.152.4:80' }
+
+def get_all_request_types_1():
+	url = "http://msolveservice.idealake.com/MSOLVEServices.svc/GetAllRequestTypes"
+	#url = "http://msolvebotserv.mahindra.com:9001/MSOLVEServices.svc/GetAllRequestTypes" 
+	response = requests.get(url, proxies=proxy_setting).json()
+	print("ppppppppppppppp {}".format(response))
+	#response = requests.get(url).json()
+	response = ast.literal_eval(response)
+	return {i['RequestTypeID'] : i['RequestTypeName'] for i in response}
+
+def get_all_request_types():
+	service_request_type_list = [
+		"Additional RAM Request",
+		"CD/DVD Writing Request",
+		"Color Print Request",
+		"Data Card",
+		"Data Recovery Request",
+		"Distribution List",
+		"Download Files",
+		"Event IT Support",
+		"Extended Screen Request",
+		"External DVD Writer",
+		"External Hard Disk",
+		"Folder Access Request",
+		"FTP Creation Request",
+		"Guest Internet Access Request",
+		"HDMI Cable",
+		"Internet Access Request",
+		"Data Storage Space Request on Server",
+		"ID Activation/Deactivation/Modification",
+		"Laptop Adopter",
+		"Laptop Bag",
+		"Mass Mailing Request",
+		"Mobile App Installation Request",
+		"Net Chat Reqeust",
+		"New Network Point Request",
+		"New User ID Creation Request",
+		"OS Installation/Uninstallation",
+		"Outlook Mobile Access Request",
+		"Password REset Reqeust",
+		"PC Shifting",
+		"Presentation Laptop Request",
+		"Portal",
+		"Pen Drive",
+		"Printer/Scanner Installation Request",
+		"Software",
+		"Special Software Installation Request",
+		"Toner/Cartridge",
+		"USB Keyboard",
+		"USB Mouse",
+		"USB Speaker",
+		"VC Room Booking Request",
+		"VDI License",
+		"VGA Cable",
+		"Video Download Request",
+		"VPN Request",
+		"Wallpaper Request",
+		"Web Cam",
+		"Web Cast Request",
+		"WEbEx Access Request",
+		"Webinar Request",
+		"WiFi Keyboard",
+		"WiFi Mouse",
+		"Others"
+		]
+	d = odict()
+	for i in service_request_type_list:
+		d[i] = i
+	return d
+
+def get_asset_by_user(token_number):
+	'''asset_dict = {}
+	#url = "http://msolvebotserv.mahindra.com:9001/MSOLVEServices.svc/GetAssetsByUser/{}".format(token_number)
+	url = "https://emss.mahindra.com/sap/bc/zzhr_get_empast?sap-client=500&emp_ID={}".format(token_number)
+	#response = requests.get(url, proxies=proxy_setting).json()
+	response = requests.get(url).json()
+	#response = ast.literal_eval(response)
+	for i in response:
+		tag_id, asset_name = i["Technical obj Desc"].split("->")
+		asset_dict[tag_id] = tag_id + " (" + asset_name + ")"
+	#asset_dict = {i['TagID'] : i['TagID']+" ("+i['Make']+")" for i in response[0]}
+	asset_dict["others"] = "OTHERS"
+	asset_dict = odict(sorted(asset_dict.items()))
+	return asset_dict'''
+	"""asset_dict = {}
+        print "inside get_asset_by_user-------------{}".format(token_number)
+        #url = "http://msolvebotserv.mahindra.com:9001/MSOLVEServices.svc/GetAssetsByUser/{}".format(token_number)
+        '''url = "https://emss.mahindra.com/sap/bc/zzhr_get_empast?sap-client=500&emp_ID={}".format(token_number)'''
+        #url = "https://emss.mahindra.com/sap/bc/zzhr_chk_sf_emp?sap-client=500&empid={}".format(token_number)
+        print "working till here...............................{}".format(url)
+        #response = requests.get(url, proxies=proxy_setting).json()
+        try:
+		response = requests.get(url).json()
+        	#response = ast.literal_eval(response)
+        	for i in response:
+                	tag_id, asset_name = i["Technical obj Desc"].split("->")
+                	asset_dict[tag_id] = tag_id + " (" + asset_name + ")"
+        	#asset_dict = {i['TagID'] : i['TagID']+" ("+i['Make']+")" for i in response[0]}
+        	asset_dict["others"] = "OTHERS"
+        	asset_dict = odict(sorted(asset_dict.items()))
+        	'''asset_dict = {i['TagID'] : i['TagID']+"("+i['Make']+")" for i in response}
+        	asset_dict["others"] = "OTHERS"
+        	asset_dict = odict(sorted(asset_dict.items(), reverse=True))'''
+        	return asset_dict
+	except:"""
+	"""asset_dict["others"] = "OTHERS"
+        #asset_dict = odict(sorted(asset_dict.items()))
+        print "ASSET DICT========{}".format(asset_dict)	
+	return asset_dict"""
+	asset_dict = {}
+        #url = "http://msolvebotserv.mahindra.com:9001/MSOLVEServices.svc/GetAssetsByUser/{}".format(token_number)
+        url = "https://emss.mahindra.com/sap/bc/zzhr_get_empast?sap-client=500&emp_ID={}".format(token_number)
+        #url = "https://emss.mahindra.com/sap/bc/zzhr_chk_sf_emp?sap-client=500&empid={}".format(token_number)
+        #response = requests.get(url, proxies=proxy_setting).json()
+        try:
+                response = requests.get(url).json()
+                print("ASSET======={}".format(response))
+                #response = ast.literal_eval(response)
+                for i in response:
+                        tag_id, asset_name = i["Technical obj Desc"].split("->")
+                        asset_dict[tag_id] = tag_id + " (" + asset_name + ")"
+                #asset_dict = {i['TagID'] : i['TagID']+" ("+i['Make']+")" for i in response[0]}
+                asset_dict["others"] = "OTHERS"
+                asset_dict = odict(sorted(asset_dict.items()))
+                '''asset_dict = {i['TagID'] : i['TagID']+"("+i['Make']+")" for i in response}
+                asset_dict["others"] = "OTHERS"
+                asset_dict = odict(sorted(asset_dict.items(), reverse=True))'''
+                return asset_dict
+        except:
+                asset_dict["others"] = "OTHERS"
+                #asset_dict = odict(sorted(asset_dict.items()))
+                return asset_dict
+
+
+
+def get_open_tickets_by_user_1(token_number):
+	token_number = "minal"
+	url = "http://msolveservice.idealake.com/MSOLVEServices.svc/GetOpenTicketsByUser/{}".format(token_number)
+	#url = "http://msolvebotserv.mahindra.com:9001/MSOLVEServices.svc/GetOpenTicketsByUser/{}".format(token_number)
+	response = requests.get(url, proxies=proxy_setting).json().replace('null', "''")
+	#response = requests.get(url).json().replace('null', "''")
+	response = ast.literal_eval(response)
+	if response:
+		return {i['ITSRNumber'] : i['ITSRNumber']+": "+i['Issue'] for i in response}
+	else:
+		return {}
+
+def unresolved_ticket_list_work_order(Corporate_ID):
+	recent_open_tickets = odict()
+	query_string = """ 'Requestor ID'="{}" AND 'Status' &lt; "Completed" """.format(Corporate_ID)
+	#url = "http://10.2.146.76:8081/arsys/WSDL/public/10.2.146.76/WorkOrder_Interface_Get"
+	url = "http://servicedesk.mahindra.com/arsys/WSDL/public/itsmremars/WorkOrder_Interface_Get"
+	port = "WOI_PortSoap"
+	if hasattr(ssl, '_create_unverified_context'):
+                ssl._create_default_https_context = ssl._create_unverified_context
+	cl = Client(url)
+	#cl.set_options(location=url)
+	#cl = Client(url,proxy=proxy_setting)
+	user = cl.factory.create('AuthenticationInfo')
+	user['userName'] = 'ChatBotUser'
+	user['password'] = 'password'
+	cl.set_options(soapheaders=user)
+	cl.set_options(port=port)
+
+	try:
+		response = cl.service.WOI_WorkOrder_Getlist(query_string)
+		for i in range(len(response)-1,-1,-1):
+			if len(recent_open_tickets) >= 10:
+				break
+			category1 = response[i].Categorization_Tier_1
+			category2 = response[i].Categorization_Tier_2
+			category3 = response[i].Categorization_Tier_3
+			if category1 and category2 and category3:
+				recent_open_tickets[response[i].Work_Order_ID] = [category1,category2,category3]
+			else:
+				recent_open_tickets[response[i].Work_Order_ID] = response[i].Description.encode('ascii', 'ignore')
+		return recent_open_tickets
+	except:
+		return recent_open_tickets
+
+def unresolved_ticket_list(Corporate_ID):
+	recent_open_tickets = odict()
+	query_string = """'Customer Login ID'="{}" and 'Status' &lt; "Resolved" """.format(Corporate_ID)
+	#url = "http://10.2.146.76:8081/arsys/WSDL/public/mmkndremapp-dev/HPD_IncidentInterface_WS"
+	url = "http://servicedesk.mahindra.com/arsys/WSDL/public/itsmremars/HPD_IncidentInterface_WS"
+	port = "HPD_IncidentInterface_WSPortTypeSoap"
+	#cl = Client(url)
+	cl = Client(url,proxy=proxy_setting)
+	user = cl.factory.create('AuthenticationInfo')
+	user['userName'] = 'ChatBotUser'
+	user['password'] = 'password'
+	cl.set_options(soapheaders=user)
+	cl.set_options(port=port)
+	try:
+		response = cl.service.HelpDesk_QueryList_Service(query_string)
+		#print response
+		for i in range(len(response)-1,-1,-1):
+			if len(recent_open_tickets) >= 10:
+				break
+			category1 = response[i].Categorization_Tier_1
+			category2 = response[i].Categorization_Tier_2
+			category3 = response[i].Categorization_Tier_3
+			if category1 and category2 and category3:
+				recent_open_tickets[response[i].Incident_Number] = [category1,category2,category3]
+			else:
+				recent_open_tickets[response[i].Incident_Number] = response[i].Summary.encode('ascii', 'ignore')
+		return recent_open_tickets
+	except:
+		return recent_open_tickets
+
+def get_open_tickets_by_user(token_number):
+	d1 = unresolved_ticket_list_work_order(token_number)
+	d2 = unresolved_ticket_list(token_number)
+	if d1 and d2:
+		d = odict()
+		d.update(d1)
+		d.update(d2)
+		return d
+	elif d1 and not d2:
+		return d1
+	elif d2 and not d1:
+		return d2
+	else:
+		return {}
+
+def ticket_status_details_incident(ticket_number):
+	#url = "http://10.2.146.76:8081/arsys/WSDL/public/mmkndremapp-dev/HPD_IncidentInterface_WS"
+	url = "http://servicedesk.mahindra.com/arsys/WSDL/public/itsmremars/HPD_IncidentInterface_WS"
+	port = "HPD_IncidentInterface_WSPortTypeSoap"
+	cl = Client(url)
+	user = cl.factory.create('AuthenticationInfo')
+	user['userName'] = 'ChatBotUser'
+	user['password'] = 'password'
+	cl.set_options(soapheaders=user)
+	cl.set_options(port=port)
+	response = cl.service.HelpDesk_Query_Service(ticket_number)
+	return response["Status"],response["Status_Reason"],response["Assigned_Group"],response["Assignee"]
+
+def ticket_status_details_work_order(ticket_number):
+	#url = "http://10.2.146.76:8081/arsys/WSDL/public/10.2.146.76/WorkOrder_Interface_Get"
+	url = "http://servicedesk.mahindra.com/arsys/WSDL/public/itsmremars/WorkOrder_Interface_Get" 
+	port = "WOI_PortSoap"
+	cl = Client(url)
+	user = cl.factory.create('AuthenticationInfo')
+	user['userName'] = 'ChatBotUser'
+	user['password'] = 'password'
+	cl.set_options(soapheaders=user)
+	cl.set_options(port=port)
+	response = cl.service.WOI_Workorder_get(ticket_number)
+	return response["Status"],response["Status_Reason"],response["Support_Group_Name"],response["Assigned_To"]
+
+def get_ticket_status_details(ticket_number):
+	if ticket_number.upper().startswith("INC"):
+		return ticket_status_details_incident(ticket_number)
+	else:
+		return ticket_status_details_work_order(ticket_number)
+
+def get_ticket_status_details_1(token_number, ticket_number):
+	token_number = "minal"
+	url = "http://msolveservice.idealake.com/MSOLVEServices.svc/GetOpenTicketsByUser/{}".format(token_number)
+	#url = "http://msolvebotserv.mahindra.com:9001/MSOLVEServices.svc/GetOpenTicketsByUser/{}".format(token_number)
+	response = requests.get(url, proxies=proxy_setting).json().replace('null', "''")
+	#response = requests.get(url).json().replace('null', "''")
+	response = ast.literal_eval(response)
+	for i in response:
+		if i['ITSRNumber'] == ticket_number:
+			return i['CurrentStatus'], i['SupportGroupName'], i['SupportPersonName']
+
+def create_incident_ticket(**kwargs):
+	#token_number = kwargs.get("token_number")
+	token_number = "minal"
+	mobile_number = kwargs.get("mobile_number")
+	issue = kwargs.get("issue")
+	description = kwargs.get("description")
+	asset = kwargs.get("asset")
+	chatbot_unique_id = kwargs.get("chatbot_unique_id")
+
+	url = "http://msolveservice.idealake.com/MSOLVEServices.svc/InsertIncidentTicket/{}/{}/{}/{}/{}/other/{}".format(chatbot_unique_id, token_number, mobile_number, issue, description, asset)
+	#url = "http://msolvebotserv.mahindra.com:9001/MSOLVEServices.svc/InsertIncidentTicket/{}/{}/{}/{}/{}/other/{}".format(chatbot_unique_id, token_number, mobile_number, issue, description, asset)
+	print("ppppppppppppppppppppppppp {}".format(url))
+	response = requests.get(url, proxies=proxy_setting).text.strip()
+	#response = requests.get(url).text.strip()
+	print("+++++++++++++++++++++ {}".format(response))
+	return response
+
+def create_ticket_bmc(**kwargs):
+	print "here ooooo {}".format(kwargs)
+	Corporate_ID = str(kwargs.get("token_number"))
+	Summary = str(kwargs.get("issue"))
+	Urgency = "4-Low"
+	Impact = "4-Minor/Localized"
+	#Assigned_Group = "Msolve-Central-Helpdesk"
+	Assigned_Group = str(kwargs.get("Assigned_Group"))
+	Status = "New"
+	Service_Type = "User Service Request"
+	Reported_Source = "Chatbot"
+	MNM_Chatbot_ID = str(kwargs.get("chatbot_unique_id"))
+	Notes = str(kwargs.get("description"))
+	Asset_List = kwargs.get("asset")
+	Direct_Contact_Phone = kwargs.get("mobile_number")
+	Submitted_By="mSolve"
+	whoami = str(kwargs.get("user"))
+	
+	print "Ticket contains...............{}".format(Corporate_ID)
+	#url = "http://10.2.146.76:8081/arsys/WSDL/public/mmkndremapp-dev/HPD_IncidentInterface_Create_WS"
+	url ="http://servicedesk.mahindra.com/arsys/WSDL/public/itsmremars/HPD_IncidentInterface_Create_WS"
+	port = 'HPD_IncidentInterface_Create_WSPortTypeSoap'
+	if hasattr(ssl, '_create_unverified_context'):
+                ssl._create_default_https_context = ssl._create_unverified_context
+	cl = Client(url)
+	#cl = Client(url,proxy=proxy_setting)
+	user = cl.factory.create('AuthenticationInfo')
+	user['userName'] = 'ChatBotUser'
+	user['password'] = 'password'
+	cl.set_options(soapheaders=user)
+	cl.set_options(port=port)
+	if whoami == "MSolve":
+		print("-------------MSOLVE USER KA DETAils-----------")
+		print("Urgency={}, Impact={}, Service_Type={}, Asset_List={}, Direct_Contact_Phone={}, Submitted_by={}, Status={} ,Corporate_ID={}, Summary={}, Notes={}, Assigned_Group={}, MNM_Chatbot_ID={}, Reported_Source={}".format(Urgency, Impact, Service_Type, Asset_List, Direct_Contact_Phone , Submitted_By, Status, Corporate_ID, Summary, Notes, Assigned_Group, MNM_Chatbot_ID, Reported_Source))
+
+		ticket_number = cl.service.HelpDesk_Submit_Service(Login_ID=Corporate_ID,Summary=Summary,Urgency=Urgency,Impact=Impact,Assigned_Group=Assigned_Group,Status=Status,Service_Type=Service_Type,Reported_Source=Reported_Source,MNM_Chatbot_ID=MNM_Chatbot_ID,Notes=Notes,Asset_List=Asset_List,Phone_Number=Direct_Contact_Phone,Submitted_By=Submitted_By)
+	elif whoami == "BMC":
+		asset = Asset_List
+		mobile = Direct_Contact_Phone
+		print("-------------BMC USER KA DETAils-----------")
+		print("Urgency={}, Impact={}, Service_Type={}, Asset_List={}, Direct_Contact_Phone={}, Submitted_by={}, Status={} ,Corporate_ID={}, Summary={}, Notes={}, Assigned_Group={}, MNM_Chatbot_ID={}, Reported_Source={}".format(Urgency, Impact, Service_Type, Asset_List, Direct_Contact_Phone , Submitted_By, Status,Corporate_ID,Summary,Notes,Assigned_Group,MNM_Chatbot_ID,Reported_Source))
+
+		ticket_number = cl.service.HelpDesk_Submit_Service(Login_ID=Corporate_ID,Summary=Summary,Urgency=Urgency,Impact=Impact,Assigned_Group=Assigned_Group,Status=Status,Service_Type=Service_Type,Reported_Source=Reported_Source,MNM_Chatbot_ID=MNM_Chatbot_ID,Phone_Number=mobile,Notes=Notes,Submitted_By=Submitted_By,asset=asset)
+	ticket_number = str(ticket_number)
+	return ticket_number
+
+def create_ticket_work_order(**kwargs):
+	print "here 0000000000 {}".format(kwargs)
+	Corporate_ID = str(kwargs.get("token_number"))
+	Summary = str(kwargs.get("issue"))
+	Priority = "Low"
+	Request_Type = str(kwargs.get("request_type_id"))
+	#Assigned_Group = "Msolve-Central-Helpdesk"
+	Assigned_Group = str(kwargs.get("Assigned_Group"))
+	Status = "Assigned"
+	# Service_Type = "User Service Request"
+	Reported_Source = "Chatbot"
+	MNM_Chatbot_ID = str(kwargs.get("chatbot_unique_id"))
+	Notes = str(kwargs.get("description"))
+	whoami = kwargs.get("user")
+	
+	#url = "http://10.2.146.76:8081/arsys/WSDL/public/10.2.146.76/WorkOrder_interface_Create_WS_"
+	#url = "http://servicedesk.mahindra.com/arsys/WSDL/public/itsmremars/WorkOrder_interface_Create_WS_"
+	url = "https://servicedesk.mahindra.com/arsys/WSDL/public/itsmremars/WorkOrder_interface_Create_WS_"
+	port = "WOI_Create_ServiceSoap"
+	if hasattr(ssl, '_create_unverified_context'):
+                ssl._create_default_https_context = ssl._create_unverified_context
+	cl = Client(url)
+	cl = Client(url,proxy=proxy_setting)
+	user = cl.factory.create('AuthenticationInfo')
+	user['userName'] = 'ChatBotUser'
+	user['password'] = 'password'
+	cl.set_options(soapheaders=user)
+	cl.set_options(port=port)
+	print("WHO AM I===={}".format(whoami))
+	if whoami == "MSolve":
+		print("MSOlve ke andar")
+		print("Request_Type={},Status={} ,Corporate_ID={}, Summary={}, Notes={}, Assigned_Group={}, MNM_Chatbot_ID={}, Reported_Source={},Priority={}, Msolve={}, Mnm_Msolve_Impact={} ".format(Request_Type, Status,Corporate_ID,Summary,Notes,Assigned_Group,MNM_Chatbot_ID,Reported_Source,Priority,"mSolve","L4"))
+		ticket_number = cl.service.WOI_WorkOrder_Create_WS(RequestType_CP=Request_Type,Status=Status,RequesterLoginID=Corporate_ID,Summary=Summary,Detailed_Description=Notes,Manager_Support_Group_Name=Assigned_Group,MNM_Chatbot_ID=MNM_Chatbot_ID,Reported_Source=Reported_Source,Priority=Priority,Msolve="mSolve",Mnm_Msolve_Impact="4-Minor/Localized")
+	elif whoami == "BMC":
+		print("BMC KE ANDAR")
+		print("Request_Type={},Status={} ,Corporate_ID={}, Summary={}, Notes={}, Assigned_Group={}, MNM_Chatbot_ID={}, Reported_Source={},Priority={}, Msolve={}".format(Request_Type, Status,Corporate_ID,Summary,Notes,Assigned_Group,MNM_Chatbot_ID,Reported_Source,Priority,"mSolve"))
+		ticket_number = cl.service.WOI_WorkOrder_Create_WS(RequestType_CP=Request_Type,Status=Status,RequesterLoginID=Corporate_ID,Summary=Summary,Detailed_Description=Notes,Manager_Support_Group_Name=Assigned_Group,MNM_Chatbot_ID=MNM_Chatbot_ID,Reported_Source=Reported_Source,Priority=Priority,Msolve="mSolve")
+	return str(ticket_number)
+
+def create_service_req_ticket(**kwargs):
+	print("********************* service req kwargs {}".format(kwargs))
+	token_number = kwargs.get("token_number")
+	token_number = "minal"
+	mobile_number = kwargs.get("mobile_number")
+	issue = kwargs.get("issue")
+	# description = kwargs.get("description")
+	description = "Official Use"
+	request_type_id = kwargs.get("request_type_id")
+	chatbot_unique_id = kwargs.get("chatbot_unique_id")
+
+	url = "http://msolveservice.idealake.com/MSOLVEServices.svc/InsertServiceRequest/{}/{}/{}/{}/{}/{}".format(chatbot_unique_id, token_number, mobile_number, issue, description, request_type_id)
+	response = requests.get(url, proxies=proxy_setting).text.strip()
+	return response

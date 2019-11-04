@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2c99d5d8-1004-4ca9-b40a-3a7147b99233" activeEnvironment="Default" name="Cont_emp_soap" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="71f9d09d-47c2-4a43-a45b-73b28f288320" wsaVersion="NONE" name="HPD_IncidentInterface_Create_WSPortTypeSoapBinding" type="wsdl" bindingName="{urn:HPD_IncidentInterface_Create_WS}HPD_IncidentInterface_Create_WSPortTypeSoapBinding" soapVersion="1_1" anonymous="optional" definition="file:/D:/Msolve_project/msolve_data/HPD_IncidentInterface_Create_WS.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\D:\Msolve_project\msolve_data\HPD_IncidentInterface_Create_WS.xml"><con:part><con:url>file:\D:\Msolve_project\msolve_data\HPD_IncidentInterface_Create_WS.xml</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:HPD_IncidentInterface_Create_WS" xmlns:s0="urn:HPD_IncidentInterface_Create_WS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:HPD_IncidentInterface_Create_WS">
+      <xsd:element name="HelpDesk_Submit_Service" type="s0:CreateInputMap"/>
+      <xsd:complexType name="CreateInputMap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Assigned_Group" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Assigned_Group_Shift_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Assigned_Support_Company" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Assigned_Support_Organization" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Assignee" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Categorization_Tier_1" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Categorization_Tier_2" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Categorization_Tier_3" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CI_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Closure_Manufacturer" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Closure_Product_Category_Tier1" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Closure_Product_Category_Tier2" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Closure_Product_Category_Tier3" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Closure_Product_Model_Version" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Closure_Product_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Department" type="xsd:string"/>
+          <xsd:element name="First_Name" type="xsd:string"/>
+          <xsd:element name="Impact" nillable="true" type="s0:ImpactType"/>
+          <xsd:element name="Last_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Lookup_Keyword" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Manufacturer" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Categorization_Tier_1" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Categorization_Tier_2" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Categorization_Tier_3" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Model_Version" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Product_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Resolution" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Resolution_Category_Tier_1" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Resolution_Category_Tier_2" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Resolution_Category_Tier_3" type="xsd:string"/>
+          <xsd:element name="Service_Type" nillable="true" type="s0:Service_TypeType"/>
+          <xsd:element name="Status" type="s0:StatusType"/>
+          <xsd:element name="Action" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Create_Request" type="s0:Create_RequestType"/>
+          <xsd:element name="Summary" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Notes" type="xsd:string"/>
+          <xsd:element name="Urgency" nillable="true" type="s0:UrgencyType"/>
+          <xsd:element minOccurs="0" name="Work_Info_Summary" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Work_Info_Notes" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Work_Info_Type" type="s0:Work_Info_TypeType"/>
+          <xsd:element minOccurs="0" name="Work_Info_Date" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="Work_Info_Source" type="s0:Work_Info_SourceType"/>
+          <xsd:element default="No" minOccurs="0" name="Work_Info_Locked" type="s0:Create_RequestType"/>
+          <xsd:element default="Internal" minOccurs="0" name="Work_Info_View_Access" type="s0:Work_Info_View_AccessType"/>
+          <xsd:element minOccurs="0" name="Middle_Initial" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Status_Reason" type="s0:Status_ReasonType"/>
+          <xsd:element minOccurs="0" name="Direct_Contact_First_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Direct_Contact_Middle_Initial" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Direct_Contact_Last_Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TemplateID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ServiceCI" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ServiceCI_ReconID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="HPD_CI" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="HPD_CI_ReconID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="HPD_CI_FormName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WorkInfoAttachment1Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WorkInfoAttachment1Data" type="xsd:base64Binary"/>
+          <xsd:element minOccurs="0" name="WorkInfoAttachment1OrigSize" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Login_ID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Company" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Corporate_ID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MNM_Chatbot_ID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Reported_Source" nillable="true" type="s0:Reported_SourceType"/>
+          <xsd:element minOccurs="0" name="Submitted_By" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Asset_List" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Phone_Number" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="ImpactType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="1-Extensive/Widespread"/>
+          <xsd:enumeration value="2-Significant/Large"/>
+          <xsd:enumeration value="3-Moderate/Limited"/>
+          <xsd:enumeration value="4-Minor/Localized"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Service_TypeType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="User Service Restoration"/>
+          <xsd:enumeration value="User Service Request"/>
+          <xsd:enumeration value="Infrastructure Restoration"/>
+          <xsd:enumeration value="Infrastructure Event"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="StatusType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="New"/>
+          <xsd:enumeration value="Assigned"/>
+          <xsd:enumeration value="In Progress"/>
+          <xsd:enumeration value="Pending"/>
+          <xsd:enumeration value="Resolved"/>
+          <xsd:enumeration value="Closed"/>
+          <xsd:enumeration value="Cancelled"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Create_RequestType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Yes"/>
+          <xsd:enumeration value="No"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="UrgencyType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="1-Critical"/>
+          <xsd:enumeration value="2-High"/>
+          <xsd:enumeration value="3-Medium"/>
+          <xsd:enumeration value="4-Low"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Work_Info_TypeType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="----- Customer Inbound -----"/>
+          <xsd:enumeration value="Customer Communication"/>
+          <xsd:enumeration value="Customer Follow-up"/>
+          <xsd:enumeration value="Customer Status Update"/>
+          <xsd:enumeration value="----- Customer Outbound -----"/>
+          <xsd:enumeration value="Closure Follow Up"/>
+          <xsd:enumeration value="Detail Clarification"/>
+          <xsd:enumeration value="General Information"/>
+          <xsd:enumeration value="Resolution Communications"/>
+          <xsd:enumeration value="Satisfaction Survey"/>
+          <xsd:enumeration value="Status Update"/>
+          <xsd:enumeration value="----- General -----"/>
+          <xsd:enumeration value="Incident Task / Action"/>
+          <xsd:enumeration value="Problem Script"/>
+          <xsd:enumeration value="Working Log"/>
+          <xsd:enumeration value="Email System"/>
+          <xsd:enumeration value="Paging System"/>
+          <xsd:enumeration value="BMC Impact Manager Update"/>
+          <xsd:enumeration value="Chat"/>
+          <xsd:enumeration value="----- Vendor -----"/>
+          <xsd:enumeration value="Vendor Communication"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Work_Info_SourceType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Email"/>
+          <xsd:enumeration value="Fax"/>
+          <xsd:enumeration value="Phone"/>
+          <xsd:enumeration value="Voice Mail"/>
+          <xsd:enumeration value="Walk In"/>
+          <xsd:enumeration value="Pager"/>
+          <xsd:enumeration value="System Assignment"/>
+          <xsd:enumeration value="Web"/>
+          <xsd:enumeration value="Other"/>
+          <xsd:enumeration value="BMC Impact Manager Event"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Work_Info_View_AccessType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Internal"/>
+          <xsd:enumeration value="Public"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Status_ReasonType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Infrastructure Change Created"/>
+          <xsd:enumeration value="Local Site Action Required"/>
+          <xsd:enumeration value="Purchase Order Approval"/>
+          <xsd:enumeration value="Registration Approval"/>
+          <xsd:enumeration value="Supplier Delivery"/>
+          <xsd:enumeration value="Support Contact Hold"/>
+          <xsd:enumeration value="Third Party Vendor Action Reqd"/>
+          <xsd:enumeration value="Client Action Required"/>
+          <xsd:enumeration value="Infrastructure Change"/>
+          <xsd:enumeration value="Request"/>
+          <xsd:enumeration value="Future Enhancement"/>
+          <xsd:enumeration value="Pending Original Incident"/>
+          <xsd:enumeration value="Client Hold"/>
+          <xsd:enumeration value="Monitoring Incident"/>
+          <xsd:enumeration value="Customer Follow-Up Required"/>
+          <xsd:enumeration value="Temporary Corrective Action"/>
+          <xsd:enumeration value="No Further Action Required"/>
+          <xsd:enumeration value="Resolved by Original Incident"/>
+          <xsd:enumeration value="Automated Resolution Reported"/>
+          <xsd:enumeration value="No longer a Causal CI"/>
+          <xsd:enumeration value="Pending Causal Incident Resolution"/>
+          <xsd:enumeration value="Resolved by Causal Incident"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Reported_SourceType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Direct Input"/>
+          <xsd:enumeration value="Email"/>
+          <xsd:enumeration value="External Escalation"/>
+          <xsd:enumeration value="Fax"/>
+          <xsd:enumeration value="Self Service"/>
+          <xsd:enumeration value="Systems Management"/>
+          <xsd:enumeration value="Phone"/>
+          <xsd:enumeration value="Voice Mail"/>
+          <xsd:enumeration value="Walk In"/>
+          <xsd:enumeration value="Web"/>
+          <xsd:enumeration value="Other"/>
+          <xsd:enumeration value="BMC Impact Manager Event"/>
+          <xsd:enumeration value="IVR"/>
+          <xsd:enumeration value="Chatbot"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="HelpDesk_Submit_ServiceResponse" type="s0:CreateOutputMap"/>
+      <xsd:complexType name="CreateOutputMap">
+        <xsd:sequence>
+          <xsd:element name="Incident_Number" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="AuthenticationInfo" type="s0:AuthenticationInfo"/>
+      <xsd:complexType name="AuthenticationInfo">
+        <xsd:sequence>
+          <xsd:element name="userName" type="xsd:string"/>
+          <xsd:element name="password" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="authentication" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="locale" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="timeZone" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="HelpDesk_Submit_ServiceSoapIn">
+    <wsdl:part element="s0:HelpDesk_Submit_Service" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="HelpDesk_Submit_ServiceSoapOut">
+    <wsdl:part element="s0:HelpDesk_Submit_ServiceResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ARAuthenticate">
+    <wsdl:part element="s0:AuthenticationInfo" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="HPD_IncidentInterface_Create_WSPortTypePortType">
+    <wsdl:operation name="HelpDesk_Submit_Service">
+      <wsdl:input message="s0:HelpDesk_Submit_ServiceSoapIn"></wsdl:input>
+      <wsdl:output message="s0:HelpDesk_Submit_ServiceSoapOut"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HPD_IncidentInterface_Create_WSPortTypeSoapBinding" type="s0:HPD_IncidentInterface_Create_WSPortTypePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelpDesk_Submit_Service">
+      <soap:operation soapAction="urn:HPD_IncidentInterface_Create_WS/HelpDesk_Submit_Service" style="document"/>
+      <wsdl:input>
+        <soap:header message="s0:ARAuthenticate" part="parameters" use="literal"></soap:header>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HPD_IncidentInterface_Create_WSService">
+    <wsdl:documentation>HelpDesk_Submit_Service Create</wsdl:documentation>
+    <wsdl:port binding="s0:HPD_IncidentInterface_Create_WSPortTypeSoapBinding" name="HPD_IncidentInterface_Create_WSPortTypeSoap">
+      <soap:address location="https://servicedesk.mahindra.com/arsys/services/ARService?server=itsmremars&amp;webService=HPD_IncidentInterface_Create_WS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://servicedesk.mahindra.com/arsys/services/ARService?server=itsmremars&amp;webService=HPD_IncidentInterface_Create_WS</con:endpoint></con:endpoints><con:operation id="02e99ec4-140b-4350-8325-114e4369226e" isOneWay="false" action="urn:HPD_IncidentInterface_Create_WS/HelpDesk_Submit_Service" name="HelpDesk_Submit_Service" bindingOperationName="HelpDesk_Submit_Service" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="85e9de8c-4985-437f-97f2-b740955a6412" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://servicedesk.mahindra.com/arsys/services/ARService?server=itsmremars&amp;webService=HPD_IncidentInterface_Create_WS</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:HPD_IncidentInterface_Create_WS"> 
+   <soapenv:Header> 
+      <urn:AuthenticationInfo> 
+         <urn:userName>ChatBotUser</urn:userName> 
+         <urn:password>password</urn:password> 
+      </urn:AuthenticationInfo> 
+   </soapenv:Header> 
+   <soapenv:Body> 
+      <urn:HelpDesk_Submit_Service> 
+         <!--Optional:--> 
+         <urn:Assigned_Group>ITSM Support</urn:Assigned_Group> 
+         <urn:First_Name>Remedy</urn:First_Name> 
+         <urn:Impact>4-Minor/Localized</urn:Impact> 
+         <urn:Last_Name>Admin</urn:Last_Name> 
+         <urn:Service_Type>User Service Request</urn:Service_Type> 
+         <urn:Status>New</urn:Status> 
+         <urn:Action>CREATE</urn:Action> 
+         <!--Optional:--> 
+         <urn:Summary>Printer is not working</urn:Summary> 
+         <urn:Notes>Testing Ignore</urn:Notes> 
+         <urn:Urgency>4-Low</urn:Urgency>
+         <urn:Reported_Source>Chatbot</urn:Reported_Source>
+         <urn:Login_ID>REMEDYADMIN</urn:Login_ID> 
+      </urn:HelpDesk_Submit_Service> 
+   </soapenv:Body> 
+</soapenv:Envelope>
+]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:HPD_IncidentInterface_Create_WS/HelpDesk_Submit_Service"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

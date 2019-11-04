@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:HPD_IncidentInterface_Create_WS">
+
+   <soapenv:Header>
+
+      <urn:AuthenticationInfo>
+
+         <urn:userName>REMEDYADMIN</urn:userName>
+
+         <urn:password>RemedyAdmin</urn:password>
+
+      </urn:AuthenticationInfo>
+
+   </soapenv:Header>
+
+   <soapenv:Body>
+
+      <urn:HelpDesk_Submit_Service>
+
+         <!--Optional:-->
+
+         <urn:Assigned_Group>ITSM Support</urn:Assigned_Group>
+
+         <urn:First_Name>Remedy</urn:First_Name>
+
+         <urn:Impact>4-Minor/Localized</urn:Impact>
+
+         <urn:Last_Name>Admin</urn:Last_Name>
+
+         <urn:Service_Type>User Service Request</urn:Service_Type>
+
+         <urn:Status>New</urn:Status>
+
+         <urn:Action>CREATE</urn:Action>
+
+         <!--Optional:-->
+
+         <urn:Summary>Printer is not working</urn:Summary>
+
+         <urn:Notes>Testing Ignore</urn:Notes>
+
+         <urn:Urgency>4-Low</urn:Urgency>
+
+         <urn:Reported_Source>Chatbot</urn:Reported_Source>
+
+         <urn:Login_ID>REMEDYADMIN</urn:Login_ID>
+
+      </urn:HelpDesk_Submit_Service>
+
+   </soapenv:Body>
+
+</soapenv:Envelope>
+
+ 

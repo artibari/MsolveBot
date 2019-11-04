@@ -1,0 +1,100 @@
+issue,id,class,type
+msoffice install,id-101,msolve,incident
+msoffice issue,id-102,msolve,incident
+ie issue,id-103,msolve,incident
+ie install,id-104,msolve,incident
+sap issue,id-105,msolve,incident
+antivirus install,id-106,msolve,incident
+antivirus issue,id-107,msolve,incident
+datacard install,id-108,msolve,incident
+desktop install,id-109,msolve,incident
+laptop install,id-110,msolve,incident
+printer install,id-111,msolve,incident
+battery issue,id-112,msolve,incident
+screen issue,id-113,msolve,incident
+printer issue,id-114,msolve,incident
+password issue,id-115,msolve,incident
+internet issue,id-116,msolve,incident
+email install,id-117,msolve,incident
+email phone install,id-118,msolve,incident
+email issue,id-119,msolve,incident
+pst file create,id-120,msolve,incident
+projector install,id-121,msolve,incident
+os install,id-122,msolve,incident
+os issue,id-123,msolve,incident
+ip install,id-124,msolve,incident
+telepresence slot,id-125,msolve,incident
+wifi issue,id-126,msolve,incident
+network issue,id-127,msolve,incident
+scanner issue,id-128,msolve,incident
+laptop issue,id-130,msolve,incident
+laptop format,id-131,msolve,incident
+desktop format,id-132,msolve,incident
+printer driver,id-133,msolve,incident
+screen driver,id-134,msolve,incident
+network driver,id-135,msolve,incident
+laptop charger,id-136,msolve,incident
+vc support,id-137,msolve,incident
+keyboard issue,id-138,msolve,incident
+mouse issue,id-139,msolve,incident
+proxy issue,id-140,msolve,incident
+proxy install,id-141,msolve,incident
+emsigner issue,id-142,msolve,incident
+profile install,id-143,msolve,incident
+smartview issue,id-144,msolve,incident
+ram install,id-145,msolve,incident
+ram issue,id-146,msolve,incident
+vpn install,id-147,msolve,incident
+vpn issue,id-148,msolve,incident
+cartridge issue,id-149,msolve,incident
+data drive issue,id-150,msolve,incident
+LSMW transaction,gid-101,grc,grc-incident
+SAP authorizations removed,gid-102,grc,grc-incident
+No authorization,gid-103,grc,grc-incident
+unable to access GRC portals ,gid-104,grc,grc-incident
+SAP Access,gid-105,grc,grc-incident
+Role creation,gid-106,grc,grc-incident
+Role updation,gid-107,grc,grc-incident
+Addition of T-Code in Roles,gid-108,grc,grc-incident
+Not able to create GRC request ,gid-109,grc,grc-incident
+Regarding Role Authorization,gid-110,grc,grc-incident
+Need Access to T Code,gid-111,grc,grc-incident
+Id Unlock,gid-112,grc,grc-incident
+SAP log in id creation,gid-113,grc,grc-incident
+New user id creation,gid-114,grc,grc-incident
+Role against dump,gid-115,grc,grc-incident
+Role Required ,gid-116,grc,grc-incident
+Role assignment in RQ2,gid-117,grc,grc-incident
+Login error in GRC Portal,gid-118,grc,grc-incident
+error while raising solman call,gid-119,grc,grc-incident
+Fire Fighter Access,gid-120,grc,grc-incident
+Role for Su53 Dump,gid-121,grc,grc-incident
+Unable to find role,gid-122,grc,grc-incident
+R3 Password reset,gid-123,grc,grc-incident
+BWP Login password,gid-124,grc,grc-incident
+SRM Approval request,gid-125,grc,grc-incident
+Role required,gid-126,grc,grc-incident
+unable to reset password,gid-127,grc,grc-incident
+SAP Login Password,gid-128,grc,grc-incident
+EWM Password Reset,gid-129,grc,grc-incident
+Password Reset,gid-130,grc,grc-incident
+SAP id creation,gid-131,grc,grc-incident
+Authorization required ,gid-132,grc,grc-incident
+Rights for T-Code,gid-133,grc,grc-incident
+SAP passward locked,gid-134,grc,grc-incident
+Authorization in SAP,gid-135,grc,grc-incident
+Access to SLO server ,gid-136,grc,grc-incident
+Transaction code Role details.,gid-137,grc,grc-incident
+Authorization issue in RQ2 Server,gid-138,grc,grc-incident
+sap id creation ,gid-139,grc,grc-incident
+Role Owner updation ,gid-140,grc,grc-incident
+Removal of authorization in RQ2,gid-141,grc,grc-incident
+SAP NOT WORKING ,gid-142,grc,grc-incident
+missing authorization in RQ2,gid-143,grc,grc-incident
+Request for T code authorization,gid-144,grc,grc-incident
+SAP Codes access,gid-145,grc,grc-incident
+Not authorized to create GRC request,gid-146,grc,grc-incident
+SQ01 - Authorization,gid-147,grc,grc-incident
+Unable to Create SAP request,gid-148,grc,grc-incident
+Error while login SAP,gid-149,grc,grc-incident
+Unable to Reset SAP Password,gid-150,grc,grc-incident

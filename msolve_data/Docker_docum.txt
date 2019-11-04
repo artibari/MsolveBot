@@ -1,0 +1,70 @@
+ssh root@10.2.202.88 (to access the remote server )
+password : pass,123
+
+docker attach bmc_9443(production)23a465c23c1b
+              bmc_dev(developement) 56bb8d6bac9a
+
+
+
+CHATBOT URL:
+https://mapps.mahindra.com/ITSupport/ 
+https://mapps.mahindra.com/ITSupportTest/
+ContId = 23180189
+ 
+Commands:
+Docker attach 
+Docker ps
+Docker ps -a
+Docker cp local/host docker-container/
+(Docker cp /root/mail_trail.py 56bb8d6bac9a:/var/www/html/mail_trail.py)
+
+docker start container_name
+vi /etc/hosts
+
+tail -f /var/log/apache2/error.log
+sudo rm /swapfile //:rm -i /var/www/html/.Permanent.py.swp
+docker-machine ip default
+service restart :: service apache2 restart :654321
+
+##Run the mongod in background
+top 
+kill -9 14
+mongod --fork --logpath /var/log.mongod.log --dbpath /var/lib/mongodb --port 27017
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================
+
+
+Type 1: Only Dockerfile
+-----------------------
+docker image build -t mic01_send_mail_trail .
+docker run -p 7001:5001 --rm mic01_send_mail_trail
+
+Type 2 : Docker-compose.yml
+---------------------------
+docker-compose up --build
+
+
+sudo service mongod start 

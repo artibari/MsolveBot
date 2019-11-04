@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:HPD_IncidentInterface_Create_WS"> 
+   <soapenv:Header> 
+      <urn:AuthenticationInfo> 
+         <urn:userName>testuser</urn:userName> 
+         <urn:password>1234</urn:password> 
+      </urn:AuthenticationInfo> 
+   </soapenv:Header> 
+   <soapenv:Body> 
+      <urn:HelpDesk_Submit_Service> 
+         <!--Optional:--> 
+         <urn:Assigned_Group>ITSM</urn:Assigned_Group> 
+         <urn:First_Name>Rakesh</urn:First_Name> 
+         <urn:Impact>4-Minor/Localized</urn:Impact> 
+         <urn:Last_Name>aher</urn:Last_Name> 
+         <urn:Service_Type>User Service Request</urn:Service_Type> 
+         <urn:Status>New</urn:Status> 
+         <urn:Action>CREATE</urn:Action> 
+         <!--Optional:--> 
+         <urn:Summary>Printer is not working</urn:Summary> 
+         <urn:Notes>Testing Ignore</urn:Notes> 
+         <urn:Urgency>4-Low</urn:Urgency>
+         <urn:Reported_Source>Chatbot</urn:Reported_Source>
+         <urn:Login_ID>aherra-cont</urn:Login_ID> 
+      </urn:HelpDesk_Submit_Service> 
+   </soapenv:Body> 
+</soapenv:Envelope>
+
+https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w

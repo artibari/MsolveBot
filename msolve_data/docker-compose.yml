@@ -1,0 +1,17 @@
+version: "3"
+services:
+  web-service:
+    build: .
+    restart: always
+    links:
+      - mongo-db
+    ports:
+      - 8080:5000
+	  
+  mongo-db:
+    image: 'mongo'
+    container_name: cont_mongo_db
+    ports:
+      - 27017:27017
+    restart: always
+	

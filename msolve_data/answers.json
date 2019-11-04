@@ -1,0 +1,252 @@
+{
+  "id-101": {
+    "answer": "Application > Install > MS Office Suite", 
+    "category": "['MS Office configuration required', 'Re install MS Office', 'Office 365 installation needed', 'Office installation']", 
+    "showForm": "false"
+  },
+  "id-102": {
+    "answer": "Application > Troubleshooting > MS Office Suite", 
+    "category": "['Skype is not working', 'Office 365 has stopped working', 'There is an issue with the MS Office suite']", 
+    "showForm": "false"
+  },
+  "id-103": {
+    "answer": "Application > Troubleshooting > Internet Explorer", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-104": {
+    "answer": "Application > Install > Internet Explorer", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-105": {
+    "answer": "Application > Troubleshooting > SAP Client", 
+    "category": "['SAP portal is not working', 'There is an issue with the SAP portal', 'SAP connection error, resolution needed']", 
+    "showForm": "false"
+  },
+  "id-106": {
+    "answer": "Application > Install > Symantec EP", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-107": {
+    "answer": "Application > Troubleshooting > Symantec EP", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-108": {
+    "answer": "Asset > Asset Installation > New Data Card Installation", 
+    "category": "['Please install the Data Card', 'Configure the Data Card on this system', 'Data card has stopped working']", 
+    "showForm": "false"
+  },
+  "id-109": {
+    "answer": "Asset > Asset Installation > New Desktop Installation", 
+    "category": "['New Desktop configuration required', 'PC is not booting', 'Desktop has some issue', 'My system is too slow']", 
+    "showForm": "false"
+  },
+  "id-110": {
+    "answer": "Asset > Asset Installation > New Laptop Installation", 
+    "category": "['New laptop configuration required', 'Laptop is not booting', 'Laptop is not powering up', 'My system is too slow']", 
+    "showForm": "false"
+  },
+  "id-111": {
+    "answer": "Operating Systems > Drivers Installation > Printer driver installation", 
+    "category": "['Request to connect printer on the system.','Need to install new printer']", 
+    "showForm": "false"
+  },
+  "id-112": {
+    "answer": "Hardware > Battery > Laptop Battery Problem", 
+    "category": "['Please replace battery of my laptop', 'Laptop battery drains pretty quickly', 'Laptop battery is not charging any more']", 
+    "showForm": "false"
+  },
+  "id-113": {
+    "answer": "Hardware > Display > Laptop Screen Problem", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-114": {
+    "answer": "Hardware > Printer Down", 
+    "category": "['Paper is jammed in the Printer, unable to print.','Need to replace ink in the Printer','Need to replace printer toner']", 
+    "showForm": "false"
+  },
+  "id-115": {
+    "answer": "Identity Management > Password Reset", 
+    "category": "['Need to change login ID and password', 'Need to reset domain password', 'Domain password has expired, please do the needful']", 
+    "showForm": "false"
+  },
+  "id-116": {
+    "answer": "Internet Portal > Internet Access Problem", 
+    "category": "['Internet is disconnected', 'Not able to access internet on the machine', 'There is an issue with the internet', 'WIFI configuration required in the system']", 
+    "showForm": "false"
+  },
+  "id-117": {
+    "answer": "Mails > Outlook > Email ID configuration", 
+    "category": "['Outlook configuration required on the system', 'New email id configuration required', 'Not able to send any email', 'Not receiving any email on Outlook', 'Neither able to send nor receive email', 'Outlook has stopped working']", 
+    "showForm": "false"
+  },
+  "id-118": {
+    "answer": "Asset > Smart Device > Smart Device Email configuration", 
+    "category": "['Outlook configuration required on the phone', 'Please install Outlook on my device', 'Configure email id on mobile device']", 
+    "showForm": "false"
+  },
+  "id-119": {
+    "answer": "Mails > Outlook > Email Send Receive Problem", 
+    "category": "['Not able to send any email', 'Not receiving any email on Outlook', 'Neither able to send nor receive email', 'Outlook has stopped working']", 
+    "showForm": "false"
+  },
+  "id-120": {
+    "answer": "Mails > Outlook > PST file creation", 
+    "category": "['Issue with the PST file creation', 'Need help with PST file creation', 'Outlook is full, error while trying to create PST file']", 
+    "showForm": "false"
+  },
+  "id-121": {
+    "answer": "Meeting > Presentation Support", 
+    "category": "['Support for Presentation needed', 'Please configure the projector for the Presentation']", 
+    "showForm": "false"
+  },
+  "id-122": {
+    "answer": "Operating Systems > Operating Systems Installation", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-123": {
+    "answer": "Operating Systems > System Hangs > Windows Hang/Shutdown", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-124": {
+    "answer": "Operating Systems > System Settings > IP address Configuration", 
+    "category": "['IP Address configuration needed', 'Please configure IP on this system']", 
+    "showForm": "false"
+  },
+  "id-125": {
+    "answer": "Meeting > Telepresence > Multi Location", 
+    "category": "['Required support for Telepresence', 'Please book a slot for Telepresence']", 
+    "showForm": "false"
+  },
+  "id-126": {
+    "answer": "Network > WiFi > Connectivity", 
+    "category": "['Not able to connect to the WIFI', 'WIFI configuration required on the machine', 'WIFI is not accessible', 'Internet is not working']", 
+    "showForm": "false"
+  },
+  "id-127": {
+    "answer": "Network > Connectivity", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-128": {
+    "answer": "Hardware > Scanner", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-129": {
+    "answer": "single word not allowed", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-130": {
+    "answer": "Laptop > Not Working", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-131": {
+    "answer": "Operating Systems > Operating Systems Installation", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-132": {
+    "answer": "Operating Systems > Operating Systems Installation", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-133": {
+    "answer": "Operating Systems > Drivers Installation > Printer driver installation",
+    "category": "['Please configure printer on the system.', 'Paper is jammed in the Printer, unable to print.','Need to replace ink in the Printer','Need to replace printer toner', 'Printer driver installation is required.', 'Need to replace ink in the Printer', 'Need to replace printer toner']",  
+    "showForm": "false"
+  },
+  "id-134": {
+    "answer": "Operating Systems > Drivers Installation > Display driver installation", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-135": {
+    "answer": "Operating Systems > Drivers Installation > LAN driver installation", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-136": {
+    "answer": "Hardware > Power Unit > Laptop Power Adaptor Problem", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-137": {
+    "answer": "Meeting > Video Conference > Multi Location using VC device",
+    "category": "['VC Support needed', 'I am facing issue with the WebEx', 'Please install WebEx application for me', 'Please create VC Bridge ID', 'Problem in the VC connection']",  
+    "showForm": "false"
+  },
+  "id-138": {
+    "answer": "Hardware > Keyboard", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-139": {
+    "answer": "Hardware > Mouse", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-140": {
+    "answer": "Operating Systems > System settings > System proxy settings", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-141": {
+    "answer": "Operating Systems > System settings > System proxy settings", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-142": {
+    "answer": "emsigner related query", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-143": {
+    "answer": "profile configuration related query", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-144": {
+    "answer": "smart view issue related query", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-145": {
+    "answer": "Hardware > Memory > RAM Upgrade", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-146": {
+    "answer": "Hardware > Memory > RAM Problem", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-147": {
+    "answer": "Application > Install > VPN Client", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-148": {
+    "answer": "Application > Troubleshooting > VPN Client", 
+    "category": "", 
+    "showForm": "false"
+  },
+  "id-149": {
+    "answer": "Hardware > Printer > Toner fault in printer", 
+    "category": "['Need to replace ink in the Printer','Need to replace printer toner']", 
+    "showForm": "false"
+  },
+  "id-150": {
+    "answer": "data transfer related query", 
+    "category": "", 
+    "showForm": "false"
+  }
+}

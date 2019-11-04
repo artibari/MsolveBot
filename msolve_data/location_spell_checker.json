@@ -1,0 +1,19 @@
+{
+	"agra" : ["aagra","agraa","aagraa"],
+	"ahmedabad" : ["ahemdabad","ahmedabad","ahamdabad","ahamadabad","ahmadabad","ahemedabad"],
+	"amravati" : ["amrawati","amaravati","amarawati"],
+	"andheri" : ["andheri"],
+	"ankleshwar" : ["ankleshwer"],
+	"aurangabad" : ["aurangabaad"],
+	"bangalore" : ["bengaluru","bangaluru"],
+	"barotiwala" : ["barotivala"],
+	"bellary" : ["bellari","belary","belary"],
+	"bhatinda" : ["bhatindaa"],
+	"bhuvaneshwar" : ["bhubaneshwar","bhubaneshvar","bhuvaneshvar","bhuvaneswar","bhuwaneswar"],
+	"bikaner" : ["bikkaner"],
+	"kolkata" : ["calcutta"],
+	"nasik" : ["nashik"],
+	"ranchi" : ["rachi"],
+	"tirupathi" : ["tirupati"],
+	"varanasi" : ["varansi","waranasi","waransi"]
+}

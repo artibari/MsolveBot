@@ -1,0 +1,9 @@
+
+Type 1: Only Dockerfile
+-----------------------
+docker image build -t mic01_send_mail_trail .
+docker run -p 7001:5001 --rm mic01_send_mail_trail
+
+Type 2 : Docker-compose.yml
+---------------------------
+docker-compose up --build

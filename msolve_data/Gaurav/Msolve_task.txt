@@ -1,0 +1,10 @@
+
+
+
+Following are list of activity to be completed in MSolve chatbot:
+
+1 Enable MSolve bot  for Contract employee as well
+2 Move MSolve application to new server with code base upgraded python 3.6
+3 Get OS name of device used to raise MSolve ticket
+4 Change error mail’s subject to contain more meaningful details
+5 MSolve support group data ownership to be transferred to MSolve team with proper user interface.

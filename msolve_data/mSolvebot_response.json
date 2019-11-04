@@ -1,0 +1,117 @@
+{
+  "id-1001": {
+    "answer": "Before I raise a ticket, You can add any specific instructions as notes for my team.", 
+    "category": ""
+  }, 
+  "id-1002": {
+    "answer": "I've raised a ticket for your issue. It'll be fixed shortly. Your ticket id for the same is <b> XYZ123 </b>. </br>Rate your experience for raising the ticket:", 
+    "category": ""
+  }, 
+  "id-1003": {
+    "answer": "Sorry, I did not understand that. </br>Please rephrase your query. </br>I only understand problems related to IT Support.", 
+    "category": ""
+  }, 
+  "id-1004": {
+    "answer": "Apologies. I still could not understand that. But I'll continue to raise a ticket for you.", 
+    "category": ""
+  }, 
+  "id-1005": {
+    "answer": "Sorry, I could not make out anything of this. Please try elaborating or rephrasing your problem.", 
+    "category": ""
+  }, 
+  "id-1006": {
+    "answer": "Please give me your current location.", 
+    "category": ""
+  }, 
+  "id-1007": {
+    "answer": "Got it.", 
+    "category": ""
+  }, 
+  "id-1008": {
+    "answer": "Okay. Shall I proceed with this and raise a ticket for you?", 
+    "category": ""
+  }, 
+  "id-1009": {
+    "answer": "You can continue to raise a ticket if you are facing any issues.", 
+    "category": ""
+  }, 
+  "id-1010": {
+    "answer": "Alright ", 
+    "category": ""
+  }, 
+  "id-1011": {
+    "answer": "Thank you ", 
+    "category": ""
+  }, 
+  "id-1012": {
+    "answer": "Your registered Office location with us is <b> xyz-loc </b>. </br> If you're at a different Office, please type the location. </br> <b>Skip</b>, to continue with the registered location.", 
+    "category": ""
+  }, 
+  "id-1013": {
+    "answer": "Please select your office location from below", 
+    "category": ""
+  }, 
+  "id-1014": {
+    "answer": "This ticket is on behalf of?:", 
+    "category": ""
+  }, 
+  "id-1015": {
+    "answer": "Please tell me the problem you are facing and I will help you raise a ticket for it.</br> e.g. \"Printer is not working.\"", 
+    "category": ""
+  }, 
+  "id-1016": {
+    "answer": "Below are your most recent un-resolved tickets. Please click on one to get it's detailed status.</br>You can also type in different ticket number, if it is not listed below.",
+    "category": ""
+  }, 
+  "id-1017": {
+    "answer": "Sorry, you do not have any ticket logged with me.</br>You can also type in different ticket number from before to get the status.", 
+    "category": ""
+  }, 
+  "id-1018": {
+    "answer": "Sorry, ticket number that you just entered does not exist. Please check and re-enter the ticket number.", 
+    "category": ""
+  }, 
+  "id-1019": {
+    "answer": "Please enter a valid ticket number.", 
+    "category": ""
+  }, 
+  "id-1020": {
+    "answer": "Have a nice day.", 
+    "category": ""
+  }, 
+  "id-1021": {
+    "answer": "Please follow steps mentioned below: </br>1. Click On START and select DEVICE AND PRINTERS </br>2.  Click on add printer </br>3.  ADD a Local Printer </br>4.  Choose a Port </br>5.  Choose Printer Drivers according to Printer Model </br>6.  Click Next </br>7.  Provide Printer Name as below and click Next </br>8.  Click on finish", 
+    "category": ""
+  }, 
+  "id-1022": {
+    "answer": "Was this helpful?", 
+    "category": ""
+  }, 
+  "id-1023": {
+    "answer": "Please follow steps mentioned below: </br>1. Open Internet Explorer </br>2. Click on Tools, Go to Internet Options </br>3. Click on Connections </br>4. Go to LAN Settings </br>5. Enable Use a proxy server </br>6. Specify Proxy address E.g.: - mmkndweb.corp.mahindra.com </br>7. Port (E.g. 80) number </br>8. Also enable Bypass proxy server for local addresses </br>9. Click on OK", 
+    "category": ""
+  }, 
+  "id-1024": {
+    "answer": "Sorry, I could not find any un-resolved tickets for you.</br> You can still type in an ticket number below to get the status.", 
+    "category": ""
+  },
+  "id-1025": {
+    "answer": "Your registered mobile number with us is <b> xyz-mobile </b>.</br>If you want to create ticket with a different mobile number, please type below.</br><b>Skip</b>, to continue with the registered mobile number."
+  }
+}
+
+d = dict()  
+years = []  
+
+(get 2 column list of years and values)
+
+for line in list:    
+    year = line[0]   
+    value = line[1]  
+
+for line in list:  
+    if year in d.keys():  
+        d[value].append(value)  
+    else:  
+        d[value] = value  
+        d[year] = year  Please select your exact office from below

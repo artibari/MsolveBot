@@ -1,0 +1,128 @@
+{
+	"bhiwandi" : {	
+		"default" : "IT-INFRA-HELPDESK-BHW MSB"
+	},
+	"bangalore" : {
+		"Mahindra Reva Electric Vehicle" : "IT-INFRA-HELPDESK-BLR REVA"
+	}, 
+	"bengaluru" : { 
+		"Mahindra Reva Electric Vehicle" : "IT-INFRA-HELPDESK-BLR REVA"
+	},
+	"rudrapur" : {
+		"FES-Mahindra Division" : "IT-INFRA-HElPDESK-RDP"
+	},
+	"worli" : {
+		"default" : "IT-INFRA-HELPDESK-WOR",
+		"AFS - INTL. OPS" : "IT-INFRA-HELPDESK-WOR"
+	},
+	"zaheerabad" : {
+                "Auto-Automotive Division" : "IT-INFRA-HELPDESK-ZAH AD",
+		"FES-Mahindra Division" : "IT-INFRA-HELPDESK-ZAH FD"
+	},
+	"haridwar" : {
+                "Auto-Automotive Division" : "IT-INFRA-HELPDESK-HRD"
+        },
+	"nashik" : {
+                "Auto-Automotive Division" : "IT-INFRA-HELPDESK-NSK",
+		"msb" : "IT-INFRA-HELPDESK-NSK MSB"
+        },
+	"nasik" : {
+		"Auto-Automotive Division" : "IT-INFRA-HELPDESK-NSK",
+		"msb" : "IT-INFRA-HELPDESK-NSK MSB"
+	},
+	"nagpur" : {
+		"FES-Mahindra Division" : "IT-INFRA-HELPDESK-NGP"
+	},
+	"knd" : {
+                "afs" : "IT-INFRA-HELPDESK-KND AD",
+                "Auto-Automotive Division": "IT-INFRA-HELPDESK-KND AD",
+                "TRK PTD ADV TEC & MRV CMN SRVS": "IT-INFRA-HELPDESK-KND AD",
+                "FES-Mahindra Division" : "IT-INFRA-HELPDESK-KND FD"
+        },
+	"kandivli" : {
+                "afs" : "IT-INFRA-HELPDESK-KND AD",
+                "Auto-Automotive Division": "IT-INFRA-HELPDESK-KND AD",
+                "TRK PTD ADV TEC & MRV CMN SRVS": "IT-INFRA-HELPDESK-KND AD",
+                "FES-Mahindra Division" : "IT-INFRA-HELPDESK-KND FD"
+        },
+	"kandivali" : {
+                "afs" : "IT-INFRA-HELPDESK-KND AD",
+                "Auto-Automotive Division": "IT-INFRA-HELPDESK-KND AD",
+                "TRK PTD ADV TEC & MRV CMN SRVS": "IT-INFRA-HELPDESK-KND AD",
+                "FES-Mahindra Division" : "IT-INFRA-HELPDESK-KND FD"
+        },
+	"kandivali-fd" : {
+		"FES-Mahindra Division" : "IT-INFRA-HELPDESK-KND FD"
+	},
+	"kandivali-ad" : {
+		"default" : "IT-INFRA-HELPDESK-KND AD"
+	},
+        "jaipur" : {
+                "FES-Mahindra Division" : "IT-INFRA-HELPDESK-JPR PLT"
+        },
+	"jaipur-plant" : {
+                "FES-Mahindra Division" : "IT-INFRA-HELPDESK-JPR PLT"
+        },
+        "igatpuri" : {
+                "TRK PTD ADV TEC & MRV CMN SRVS" : "IT-INFRA-HELPDESK-IGT",
+                "Auto-Automotive Division" : "IT-INFRA-HELPDESK-IGT"
+        },
+        "chakan" : {
+                "Auto-MVML" : "IT-INFRA-HELPDESK-CHK MVML",
+		"Mahindra Logistics" : "IT-INFRA-HELPDESK-CHK MVML",
+		"Auto-Automotive Division" : "IT-INFRA-HELPDESK-CHK MVML",
+                "Auto-MHEL" : "IT-INFRA-HELPDESK-CHK MHEPL",
+                "AFS" : "IT-INFRA-HELPDESK-CHAKAN MSB"
+        },
+        "chennai" : {
+                "mrv" : "IT-INFRA-HELPDESK-MRV"
+        },
+        "pithampur" : {
+                "mtwl" : "IT-INFRA-HELPDESK-PIT MTWL"
+        },
+	"mtwd-pit" : {
+                "mtwl" : "IT-INFRA-HELPDESK-PIT MTWL"
+        },
+        "chinchwad" : {
+        	"default" : "IT-INFRA-HELPDESK-CHW MTWL",
+		"mtbd" : "IT-INFRA-HELPDESK-CHW MTBD"
+        },
+	"mtbd" : {
+		"default" : "IT-INFRA-HELPDESK-CHW MTBD"
+	},
+	"mtwd-chinchwad" : {
+                "default" : "IT-INFRA-HELPDESK-CHW MTWL"
+        },
+        "kanhe" : {
+                "msb" : "IT-INFRA-HELPDESK-KNH MSB"
+        },
+        "shewale" : {
+                "ce" : "IT-INFRA-HELPDESK-PUN CE"
+        },
+	"shewale center" : {
+                "default" : "IT-INFRA-HELPDESK-PUN CE"
+        },
+        "sewale" : {
+                "ce" : "IT-INFRA-HELPDESK-PUN CE"
+        },
+        "pune" : {
+                "truck and bus division" : "IT-INFRA-HELPDESK-CHW-MTBD"
+        },
+        "vadgaon" : {
+                "default" : "IT-INFRA-HELPDESK-VAD MSB",
+		"AFS" : "IT-INFRA-HELPDESK-VAD-MSB",
+		"msb" : "IT-INFRA-HELPDESK-VAD MSB"
+        },
+	"msb-vad" : {
+		"default" : "IT-INFRA-HELPDESK-VAD MSB",
+                "AFS" : "IT-INFRA-HELPDESK-VAD-MSB",
+                "msb" : "IT-INFRA-HELPDESK-VAD MSB"
+        },
+	"msb-bhw" : {
+		"default" : "IT-INFRA-HELPDESK-BHW MSB"
+	},
+	"mvml-chakan" : {
+		"default" : "IT-INFRA-HELPDESK-CHK MVML"
+	}
+}
+

@@ -1,0 +1,387 @@
+{
+	"agra" : {
+		"nore" : "AO-Agra-NONRE -Helpdesk"
+	},
+	"ahmedabad" : {
+		"default" : "AO-AHMEDABAD-RSO-NONRE-HelpDesk",
+		"auto" : "AO-AHMEDABAD-AS-HELPDESK",
+		"fes" : "AO-AHMEDABAD-FES-HELPDESK",
+		"rso" : "AO-AHMEDABAD-RSO-NONRE-HelpDesk"
+	},
+	"amravati" : {
+		"agri" : "AO-Amravati-Agri-NONRE-Helpdesk"
+	},
+	"andheri" : {
+		"default" : "IT ANDHERI - MLDL",
+		"RS-Mahindra Lifespaces" : "IT ANDHERI - MLDL",
+		"designplant" : "AO-Andheri-DesignPlant-NONRE-Helpdesk"
+	},
+	"ankleshwar" : {
+		"agri" : "AO-Ankleshwar-Agri-NONRE-Helpdesk"
+	},
+	"aurangabad" : {
+		"ce" : "AO-Aurangabad-CE-NONRE-Helpdesk"
+	},
+	"bangalore" : {
+		"default" : "AO-BANGALORE-HELPDESK",
+		"helpdesk" : "AO-BANGALORE-HELPDESK",
+		"RS-Mahindra Lifespaces" : "IT BANGALORE - MLDL",
+		"Mahindra Logistics" : "MLL-BANGALORE-RE-SERVICEDESK"
+	},
+	"bangalore - tc" : {
+		"helpdesk" : "IT.HELPDESK@MahindraElectric.com"
+	},
+	"barotiwala" : {
+		"rso" : "AO-BAROTIWALA-RSO-NONRE-HelpDesk"
+	},
+	"bellary" : {
+		"nonre" : "AO-Bellary-NONRE-Helpdesk"
+	},
+	"bhatinda" : {
+		"fes" : "AO-Bhatinda-FES-NONRE-Helpdesk"
+	},
+	"bhivandi" : {
+		"Mahindra Logistics" : "MLL-BHIWANDI-RE-SERVICEDESK"
+	},
+	"bhopal" : {
+		"default" : "AO-BHOPAL-AS-HELPDESK",
+		"auto" : "AO-BHOPAL-AS-HELPDESK",
+		"fes" : "AO-BHOPAL-FES-HELPDESK",
+		"mahindra steel service center" : "MSSCL-BHOPAL-HELPDESK"
+	},
+	"bhuvaneshwar" : {
+		"default" : "AO-BHUBNESHWAR-HELPDESK",
+		"helpdesk" : "AO-BHUBNESHWAR-HELPDESK",
+		"rso" : "AO-BHUVANESHWAR-RSO-NONRE-HelpDesk"
+	},
+	"bikaner" : {
+		"helpdesk" : "AO-BIKANER-HELPDESK"
+	},
+	"boisar" : {
+		"RS-Mahindra Lifespaces" : "IT BOISAR - MLDL"
+	},
+	"chakan" : {
+		"default" : "AO-CHAKAN-DG-PLANT",
+		"dg" : "AO-CHAKAN-DG-PLANT",
+		"mahindra auto steel" : "MASPL-CHAKAN-HELPDESK",
+		"Mahindra Logistics" : "MLL-PUNE-RE-SERVICEDESK"
+	},
+	"chandigarh" : {
+		"default" : "AO-CHANDIGARH-HELPDESK",
+		"helpdesk" : "AO-CHANDIGARH-HELPDESK",
+		"truck and bus division" : "AO-CHANDIGARH-MTBD-NONRE-HELPDESK"
+	},
+	"padappai" : {
+		"nonre" : "AO-Chennai Padappai-NONRE-Helpdesk"
+	},
+	"chennai" : {
+		"default" : "AO-CHENNAI-HELPDESK",
+		"RS-Mahindra Lifespaces" : "IT CHENNAI-MLDL",
+		"Mahindra Logistics" : "MLL-CHENNAI-RE-SERVICEDESK",
+		"helpdesk" : "AO-CHENNAI-HELPDESK",
+		"truck and bus division" : "AO-CHENNAI-MTBD-NONRE-HELPDESK",
+		"Mahindra World City" : "MWC-CHENNAI-HELPDESK"
+	},
+	"chowringhee" : {
+		"helpdesk" : "AO-CHOWRINGHEE-HELPDESK"
+	},
+	"cochin" : {
+		"helpdesk" : "AO-COCHIN-HELPDESK"
+	},
+	"coimbatore" : {
+		"nonre" : "AO-Coimbatore-NONRE-Helpdesk"
+	},
+	"dalkola" : {
+		"rso" : "AO-DALKOLA-RSO-NONRE-HelpDesk"
+	},
+	"daruhera" : {
+		"rso" : "AO-DARUHERA-RSO-NONRE-HelpDesk"
+	},
+	"delhi" : {
+		"default" : "AO-DELHI-RSO-NONRE-HelpDesk",
+		"RS-Mahindra Lifespaces" : "IT DELHI-MLDL",
+		"plant" : "AO-Delhi-Plant-NONRE-Helpdesk",
+		"rso" : "AO-DELHI-RSO-NONRE-HelpDesk",
+		"Mahindra Logistics" : "MLL-DELHI-RE-SERVICEDESK"
+	},
+	"dharawad" : {
+		"default" : "AO-DHARAWAD-RSO-NONRE-HelpDesk",
+		"rso" : "AO-DHARAWAD-RSO-NONRE-HelpDesk",
+		"truck and bus division" : "AO-DHARWAD-MTBDRSO-NONRE-HELPDESK"
+	},
+	"faridabad" : {
+		"Defence Land Systems" : "MDS-FARIDABAD-RE-HELPDESK"
+	},
+	"goa" : {
+		"default" : "AO-GOA-RSO-NONRE-HelpDesk",
+		"agri" : "AO-Goa-Agri-NONRE-Helpdesk",
+		"rso" : "AO-GOA-RSO-NONRE-HelpDesk"
+	},
+	"gor" : {
+		"Mahindra Logistics" : "MLL-GOREGAON-RE-SERVICEDESK"
+	},
+	"guwahati" : {
+		"default" : "AO-GUWAHATI-HELPDESK",
+		"rso" : "AO-GUHWATI-RSO-NONRE-HelpDesk",
+		"helpdesk" : "AO-GUWAHATI-HELPDESK"
+	},
+	"guntur" : {
+		"default" : "AO-GUNTUR-RSO-NONRE-HelpDesk",
+		"truck and bus division" : "AO-GUNTUR-MTBDRSO-NONRE-HELPDESK",
+		"rso" : "AO-GUNTUR-RSO-NONRE-HelpDesk"
+	},
+	"gwalior" : {
+		"default" : "AO-GWALIOR-HELPDESK",
+		"afs" : "AO-GWALIOR-HELPDESK",
+		"nonre" : "AO-Gwalior-NONRE-HELPDESK",
+		"rso" : "AO-GWALIOR-RSO-NONRE-HelpDesk"
+	},
+	"haridwar" : {
+		"rso" : "AO-HARIDWAR-RSO-NONRE-HelpDesk"
+	},
+	"hosur" : {
+		"default" : "AO-HOSUR-RSO-NONRE-HelpDesk",
+		"truck and bus division" : "AO-HOSUR-MTBDRSO-NONRE-HELPDESK",
+		"rso" : "AO-HOSUR-RSO-NONRE-HelpDesk"
+	},
+	"hubli" : {
+		"nonre" : "AO-Hubli-NONRE-Helpdesk"
+	},
+	"hyderabad" : {
+		"default" : "AO-HYDERABAD-HELPDESK",
+		"helpdesk" : "AO-HYDERABAD-HELPDESK",
+		"RS-Mahindra Lifespaces" : "IT HYDERABAD-MLDL",
+		"Mahindra Logistics" : "MLL-HYDERABAD-RE-SERVICEDESK",
+		"spd" : "AO-Hyderabad-SPD-NONRE-Helpdesk"
+	},
+	"indore" : {
+		"default" : "AO-INDORE-HELPDESK",
+		"afs" : "AO-INDORE-HELPDESK",
+		"dairy" : "AO-Indore-Dairy-NONRE-HELPDESK",
+		"truck and bus division" : "AO-Indore-MTBD-NONRE-Helpdesk",
+		"nonre" : "AO-Indore-NONRE-HELPDESK",
+		"rso" : "AO-INDORE-RSO-NONRE-HelpDesk"
+	},
+	"jabalpur" : {
+		"nonre" : "AO-Jabalpur-NONRE-HELPDESK"
+	},
+	"jaipur" : {
+		"default" : "AO-JAIPUR-HELPDESK",
+		"helpdesk" : "AO-JAIPUR-HELPDESK",
+		"truck and bus division" : "AO-JAIPUR-MTBD-NONRE-HELPDESK",
+		"rso" : "AO-JAIPUR-RSO-NONRE-HelpDesk"
+	},
+	"jalandhar" : {
+		"afs" : "AO-JALANDHAR-HELPDESK"
+	},
+	"jammu" : {
+		"rso" : "AO-JAMMU-RSO-NONRE-HelpDesk"
+	},
+	"jhanshi" : {
+		"default" : "AO-JHANSHI-RSO-NONRE-HelpDesk",
+		"ce" : "AO-Jhansi-CE-NONRE-Helpdesk",
+		"rso" : "AO-JHANSHI-RSO-NONRE-HelpDesk"
+	},
+	"jhansi" : {
+		"default" : "AO-JHANSHI-RSO-NONRE-HelpDesk",
+		"ce" : "AO-Jhansi-CE-NONRE-Helpdesk",
+		"rso" : "AO-JHANSHI-RSO-NONRE-HelpDesk"
+	},
+	"jodhpur" : {
+		"nonre" : "AO-Jodhpur-NONRE-HELPDESK",
+		"helpdesk" : "AO-JODHPUR-HELPDESK"
+	},
+	"kanhe1" : {
+		"mahindra steel service" : "MSSCL-KANHE1-HELPDESK"
+	},
+	"kanhe2" : {
+		"mahindra steel service" : "MSSCL-KANHE2-HELPDESK"
+	},
+	"karnal" : {
+		"helpdesk" : "AO-KARNAL-HELPDESK"
+	},
+	"katni" : {
+		"agri" : "AO-Katni-Agri-NONRE-Helpdesk"
+	},
+	"knd" : {
+		"default" : "MITC-DESKTOP-HELPDESK",
+		"vip" : "KANDIVALI-VIP-HELPDESK",
+		"secretary" : "KANDIVALI-VIP-SECRETARYHELPDESK",
+		"Mahindra Logistics" : "MLL-KANDIVALI-RE-SERVICEDESK"
+	},
+	"kandivli" : {
+		"default" : "MITC-DESKTOP-HELPDESK",
+		"vip" : "KANDIVALI-VIP-HELPDESK",
+		"secretary" : "KANDIVALI-VIP-SECRETARYHELPDESK",
+		"Mahindra Logistics" : "MLL-KANDIVALI-RE-SERVICEDESK"
+	},
+	"kandivali" : {
+		"default" : "MITC-DESKTOP-HELPDESK",
+		"vip" : "KANDIVALI-VIP-HELPDESK",
+		"secretary" : "KANDIVALI-VIP-SECRETARYHELPDESK",
+		"Mahindra Logistics" : "MLL-KANDIVALI-RE-SERVICEDESK"
+	},
+	"kolhapur" : {
+		"agri" : "AO-Kolhapur-Agri-NONRE-helpdesk"
+	},
+	"kolkata" : {
+		"default" : "AO-KOLKATTA-HELPDESK",
+		"rso" : "AO-KOLKATA-RSO-NONRE-HelpDesk",
+		"helpdesk" : "AO-KOLKATTA-HELPDESK"
+	},
+	"kota" : {
+		"nonre" : "AO-Kota-NONRE-HELPDESK"
+	},
+	"latur" : {
+		"agri" : "AO-Latur-Agri-NONRE-Helpdesk"
+	},
+	"lucknow" : {
+		"default" : "AO-LUCKNOW-HELPDESK",
+		"helpdesk" : "AO-LUCKNOW-HELPDESK",
+		"rso" : "AO-LUCKNOW-RSO-NONRE-HelpDesk"
+	},
+	"madurai" : {
+		"nonre" : "AO-Madurai-NONRE-Helpdesk"
+	},
+	"manesar" : {
+		"truck and bus division" : "AO-MANESAR-MTBDRSO-NONRE-HELPDESK"
+	},
+	"mazagaon" : {
+		"nonre" : "AO-Mazagaon-NONRE-Helpdesk"
+	},
+	"mohali" : {
+		"fes" : "AO-MOHALI-FES-HELPDESK"
+	},
+	"mulund" : {
+		"RS-Mahindra Lifespaces" : "IT MULUND - MLDL"
+	},
+	"nagpur" : {
+		"default" : "AO-Nagpur-NONRE-Helpdesk",
+		"truck and bus division" : "AO-NAGPUR-MTBD-NONRE-HELPDESK",
+		"RS-Mahindra Lifespaces" : "IT NAGPUR-MLDL",
+		"nonre" : "AO-Nagpur-NONRE-Helpdesk"
+	},
+	"nasik" : {
+		"default" : "AO-NASIK-RSO-NONRE-HelpDesk",
+		"rso" : "AO-NASIK-RSO-NONRE-HelpDesk",
+		"mahindra intertrade" : "MIL-NASHIK-HELPDESK",
+		"RS-Mahindra Lifespaces" : "IT NASHIK - MLDL"
+	},
+	"newdelhi" : {
+		"helpdesk" : "AO-NEWDELHI-HELPDESK"
+	},
+	"noida" : {
+		"rso" : "AO-NOIDA-RSO-NONRE-HelpDesk"
+	},
+	"palakkad" : {
+		"default" : "AO-PALLAKAD-RSO-NONRE-HelpDesk",
+		"truck and bus division" : "AO-PALLAKAD-MTBDRSO-NONRE-HELPDESK",
+		"rso" : "AO-PALLAKAD-RSO-NONRE-HelpDesk"
+	},
+	"patna" : {
+		"default" : "AO-PATNA-RSO-NONRE-HelpDesk",
+		"auto" : "AO-PATNA-AS-HELPDESK",
+		"fes" : "AO-PATNA-FES-HELPDESK",
+		"truck and bus division" : "AO-PATNA-MTBDRSO-NONRE-HELPDESK",
+		"rso" : "AO-PATNA-RSO-NONRE-HelpDesk"
+	},
+	"powai" : {
+		"RS-Mahindra Lifespaces" : "IT POWAI - MLDL"
+	},
+	"pune" : {
+		"default" : "AO-PUNE-AS-HELPDESK",
+		"auto" : "AO-PUNE-AS-HELPDESK",
+		"chinchwad" : "AO-Pune-Chinchwad-MTBD-NONRE-Helpdesk",
+		"RS-Mahindra Lifespaces" : "IT PUNE-MLDL",
+		"fes" : "AO-PUNE-FES-HELPDESK",
+		"mgears" : "AO-Pune-MGears-NONRE-Helpdesk",
+		"truck and bus division" : "AO-PUNE-MTBDRSO-NONRE-HELPDESK",
+		"Defence Land Systems" : "MDS-PUNE-RE-HELPDESK"
+	},
+	"raigarh" : {
+		"ce" : "AO-Raigarh-CE-NONRE-Helpdesk"
+	},
+	"raipur" : {
+		"auto" : "AO-RAIPUR-AS-HELPDESK",
+		"fes" : "AO-RAIPUR-FES-HELPDESK",
+		"rso" : "AO-RAIPUR-RSO-NONRE-HelpDesk"
+	},
+	"rajkot" : {
+		"default" : "AO-Rajkot-NONRE-HELPDESK",
+		"nonre" : "AO-Rajkot-NONRE-HELPDESK",
+		"plant" : "AO-Rajkot-Plant-NONRE-Helpdesk"
+	},
+	"ranchi" : {
+		"default" : "AO-RANCHI-HELPDESK",
+		"helpdesk" : "AO-RANCHI-HELPDESK",
+		"truck and bus division" : "AO-RANCHI-MTBDRSO-NONRE-HELPDESK",
+		"nonre" : "AO-Ranchi-NONRE-HELPDESK",
+		"rso" : "AO-RANCHI-RSO-NONRE-HelpDesk",
+		"fes" : "AO-Ranchi-FES-NONRE-Helpdesk"
+	},
+	"rayagada" : {
+		"ce" : "AO-Rayagada-CE-NONRE-Helpdesk"
+	},
+	"sanpada" : {
+		"truck and bus division" : "AO-SANPADA-MTBD-NONRE-HELPDESK"
+	},
+	"satna" : {
+		"ce" : "AO-Satna-CE-NONRE-Helpdesk"
+	},
+	"secunderabad" : {
+		"helpdesk" : "AO-SECUNDERABAD-HELPDESK"
+	},
+	"surat" : {
+		"ce" : "AO-Surat-CE-NONRE-Helpdesk"
+	},
+	"thane" : {
+		"RS-Mahindra Lifespaces" : "IT THANE - MLDL"
+	},
+	"tirupathi" : {
+		"nonre" : "AO-Tirupathi-NONRE-Helpdesk"
+	},
+	"udaipur" : {
+		"default" : "AO-Udaipur-NONRE-HELPDESK",
+		"truck and bus division" : "AO-UDAIPUR-MTBDRSO-NONRE-HELPDESK",
+		"nonre" : "AO-Udaipur-NONRE-HELPDESK",
+		"rso" : "AO-UDAIPUR-RSO-NONRE-HelpDesk"
+	},
+	"vadodara" : {
+		"mahindra intertrade" : "MIL-VADODARA-HELPDESK"
+	},
+	"vapi" : {
+		"rso" : "AO-VAPI -RSO-NONRE-HelpDesk"
+	},
+	"varanasi" : {
+		"FES-Mahindra Division" : "AO-VARANASI-HELPDESK"
+	},
+	"vijaywada" : {
+		"nonre" : "AO-Vijaywada-NONRE-Helpdesk"
+	},
+	"zaheerabad" : {
+		"truck and bus division" : "AO-ZAHEERABAD-MTBD-NONRE-HELPDESK",
+		"rso" : "AO-ZAHEERABAD-RSO-NONRE-HelpDesk"
+	},
+	"zirakhpur" : {
+		"rso" : "AO-ZIRAKHPUR-RSO-NONRE-HelpDesk",
+		"nonre" : "AO-Zirakpur-NONRE-Helpdesk"
+	},
+	"gateway" : {
+		"default" : "GATEWAY-HELPDESK",
+		"helpdesk" : "GATEWAY-HELPDESK",
+		"vip" : "GATEWAY-VIP-HELPDESK"
+	},
+	"headoffice" : {
+		"desktop" : "HEADOFFICE-DESKTOP-HELPDESK"
+	},
+	"worli" : {
+		"default" : "WORLI-DESKTOP-HELPDESK",
+		"mahindra intertrade" : "MIL-WORLI-HELPDESK",
+		"RS-Mahindra Lifespaces" : "IT HO-MLDL",
+		"truck and bus division" : "AO-WORLI-MTBD-NONRE-HELPDESK",
+		"Group Corporate Office" : "WORLI-DESKTOP-HELPDESK"
+	},
+	"sewri" : {
+		"Group Corporate Office" : "SEWRI-DESKTOP-HELPDESK"
+	}
+}

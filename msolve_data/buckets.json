@@ -1,0 +1,103 @@
+{
+
+"bucket_priority_list" : ["excel","office","data","ram","smartview","profile","emsigner","vpn","proxy","keyboard","mouse","wifi","network","pst","projector","vc","email","datacard","internet","os","ip","msoffice","ie","antivirus","password","scanner","cartridge","printer","screen","charger","desktop","battery","laptop","telepresence"],
+
+"sub_bucket_priority_list" : ["issue","install","create","slot","format","driver"],
+
+"no_priority" : [],
+
+"syn_keyword_list" : ["screen","printer","password","internet","email","os","desktop","laptop"],
+
+"synonym_dict" : {
+
+	"issue" : ["poweron","update","updates","updated","updation","upgrade","upgradation","upgrading","problem","problematic","error","work","stop","stopped","stops","working","function","stopped","disconnected","disconnect","active","malfunction","malfunctioning","functional","operational","operating","operative","functioning","damage","damaged","trouble","troubled","troubling","booting"],
+	"install" : ["installation","installing","installed","installable","configure","configuration","configured","require","required","requirement","change","changed","replace","replacement","replaced"],
+	"ie" : ["explorer","internetexplorer","chrome","browser"],
+	"antivirus" : ["av","symantec"],
+	"datacard" : ["dongle","netsetter","photon"],
+	"desktop" : ["pc","system","computer","cpu","machine","pcs","workstation","workstations"],
+	"laptop" : [],
+	"printer" : ["printing","print","prints","printout","printouts","printers"],
+	"cartridge" : ["toner","ink"],
+	"battery" : ["batteries"],
+	"screen" : ["lcd","monitor","display"],
+	"internet" : ["website","site","sites","webpage","webpages","net"],
+	"password" : ["passwords","credential","credentials","login"],
+	"email" : ["OUTLOOK","e-mail","e-mails","emails","mail","mails","outlook","mailing","mailbox","emailbox","inbox","outbox"],
+	"create" : ["creation"],
+	"os" : ["windows","window","windows7","window7","mac","osx","linux","unix","ubuntu"],
+	"ip" : ["dns"],
+	"vc" : ["mvarta","scopia","bridge","conference","meeting","webex"],
+	"projector" : ["presentation"],
+	"telepresence" : ["tele-presence","tp"],
+	"wifi" : ["wi-fi","wlan"],
+	"network" : ["lan","vlan","voip","router","routing","switch","port","isp","modem"],
+	"scanner" : ["scan","scanning","scaning"],
+	"driver" : ["drivers"],
+	"format" : ["formatting"],
+	"charger" : ["adapter","adaptor","adopter"],
+	"emsigner" : ["emsign","gst","msigner"],
+	"smartview" : ["Microsoft Excel","excel", "excelsheet"],
+	"msoffice" : ["OFFICE","word","skype","lync","communicator","365","powerpoint","office","software","adobe","flash","font"],
+	"mouse" : ["touchpad","scrollpad"],
+	"data" : ["folder","drive","pendrive","server","ftp","pen","backup","phone","mobile","smartphone","sap","portal","dashboard","mecentral","central","epportal","employee","eportal","meconnect","mconnect","me connect","hdd","hardrive","harddrive","disk","harddisk","cable","dvd","id","profile"]
+	},
+
+"replace_by_word" : {
+	"msoffice" : ["ms office","microsoft office","micro soft office","word","excel","ppt","power point","powerpoint","office suite"],
+	"ie" : ["internet explorer"],
+	"sap" : ["sap client","sap-client"],
+	"antivirus" : ["anti virus","anti-virus","symantec ep"],
+	"datacard" : ["data card","data-card","net-setter","net setter"],
+	"desktop" : ["desk top","desk-top","work station","work stations"],
+	"battery" : ["laptop battery","laptop-battery"],
+	"internet" : ["web site","web sites","web pages","web page"],
+	"email" : ["e mail","email id","mail id","outlook id"],
+	"os" : ["operating system","operating systems","operating-system"],
+	"poweron" : ["power on","powering on","power off","powering off","turn on","turn off"],
+	"ip" : ["internet protocol","ip address"],
+	"telepresence" :["tele presence"],
+	"vc" : ["video conference","video meeting","video call","web-ex","web ex"],
+	"wifi" : ["wi fi"],
+	"charger" : ["charging cable","power cord","charging cord","power adapter","power adaptor"],
+	"mouse" : ["pointing device","touch pad"],
+	"keyboard" : ["key board","key pad","keypad"],
+	"emsigner" : ["em signer","m signer","em sign","m sign"],
+	"smartview" : ["smart view"],
+	"meconnect" : ["me connect", "m connect"]
+},
+
+"screen" : {
+	"issue" : ["flicker","flickering","flickers","flikker","flikkering","lines","broke","broken","broked"]
+},
+
+"printer" : {
+	"issue" : ["paper","jam","jammed","jamming","jams","stuck","printing","print"]
+},
+
+"password" : {
+	"issue" : ["reset","expire","expired","forgot","forget"]
+},
+
+"internet" : {
+	"issue" : ["access","accessible","open","opening","connect","connecting"]
+},
+
+"email" : {
+	"issue" : ["connect","connecting","sync","syncing","synced","send","sent","receive","received","going","coming","open","opening","hang","stuck"]
+},
+
+"os" : {
+	"install" : ["format","formatting","formatted","reinstall"],
+	"issue" : ["hang","hung","hanging","stuck","slow","slowness","slowed","hanged"]
+},
+
+"desktop" : {
+	"issue" : ["hang","hung","hanging","stuck","slow","poweron","slow","slowness","slowed","open","opening","hanged"]
+},
+
+"laptop" : {
+	"issue" : ["hang","hung","hanging","stuck","slow","poweron","slow","slowness","slowed","open","opening","opened","hanged"]
+}
+
+}
